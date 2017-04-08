@@ -32,7 +32,7 @@
     <input type="submit" value="search">
   </form>
   <h3> Weather Conditions </h3>
-    <div> If you would like to receive a weather alert, please select a weather condition:
+    <div> Select a weather condition to receive weather alerts:
         <p>
           <input type="checkbox" id="cbox1" value="first_checkbox">
           <label style='color:green' for="cbox1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -41,7 +41,7 @@
           <input type="checkbox" id="cbox3" value="third_checkbox">
           <label style='color:orange' for="cbox3">Inadequate</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="checkbox" id="cbox4" value="fourth_checkbox">
-          <label style='color:red' for="cbox4">Hazard</label>
+          <label style='color:red' for="cbox4">Hazardous</label>
         </p>
         <!-- <ul>
           <li style='color:green'>Excellent</li>
@@ -50,20 +50,30 @@
           <li style='color:red'>Hazard</li>
         </ul> -->
     </div>
-  <h3> Average Solar Output:</h3>
-    <div>Solar production</div>
-      <ul>
-        <li >Consumption: 29.88 kw/h </li>
-        <li >Production: 2.95 kw/h </li>
-        <li >SelfConsumption: 0</li>
-        <li >Feedin(export): 0</li>
-        <li >Purchased(Import): 0</li>
-      </ul> 
+  <h3> PV System Statistics</h3>
+    <!-- <div>Solar production</div> -->
+      <table class="striped">
+      <tr>
+        <th scope="col">Consumption:</th><td>29.88 kw/h </td>
+      </tr>
+      <tr>
+        <th scope="col">Production:</th><td>2.95 kw/h </td>
+      </tr>
+      <tr>
+        <th scope="col">SelfConsumption:</th><td>0</td>
+      </tr>
+      <tr>
+        <th scope="col">Feedin(export):</th><td>0</td>
+      </tr>
+      <tr>
+        <th scope="col">Purchased(Import):</th><td>0</td>
+      </tr>
+    </table>
     <h3>Total savings over time period:</h3>
     <div style='color:green'>$100</div>
     <h3>Estimated savings for next month:</h3>
       <div>$120</div>
-      <h3>Average savings in your zipcode:</h3>
+      <h3>Average savings in your zip code:</h3>
         <div>$75</div>
     </div>
    </body>
