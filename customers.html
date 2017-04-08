@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Helio Portal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<h1>Welcome back Joe</h1>  
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="logos/huge-logo.png" width=60% height=60%></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><!--Navbar Link--></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Navbar Link</a></li>
+      </ul>
+      <a href="index.html" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+
+<div class="container">
+<h1>Welcome back, Joe!</h1>  
   <!-- <img src=""> LOGO GOES HERE -->
-  <h3>Select the date you're interested in Joe!</h3>
+  <h3>Select the date you're interested in:</h3>
   <form>
-    <input type="text" name="date" placeholder="enter date MM/DD/YYYY">
+    <input type="date" name="date" placeholder="enter date MM/DD/YYYY" class="datepicker">
     <input type="submit" value="search">
   </form>
   <h3> Weather Conditions </h3>
-    <div> If you would like to receive a weather alert please select a weather condition:
+    <div> If you would like to receive a weather alert, please select a weather condition:
         <p>
           <input type="checkbox" id="cbox1" value="first_checkbox">
-          <label style='color:green' for="cbox1">Excellent</label>
+          <label style='color:green' for="cbox1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
           <input type="checkbox" id="cbox2" value="second_checkbox">
-          <label style='color:blue' for="cbox2">Fair</label>
+          <label style='color:blue' for="cbox2">Fair</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="checkbox" id="cbox3" value="third_checkbox">
-          <label style='color:orange' for="cbox3">inadequate</label>
+          <label style='color:orange' for="cbox3">Inadequate</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="checkbox" id="cbox4" value="fourth_checkbox">
           <label style='color:red' for="cbox4">Hazard</label>
         </p>
@@ -31,7 +51,7 @@
         </ul> -->
     </div>
   <h3> Average Solar Output:</h3>
-    <div>Solor production</div>
+    <div>Solar production</div>
       <ul>
         <li >Consumption: 29.88 kw/h </li>
         <li >Production: 2.95 kw/h </li>
@@ -43,8 +63,9 @@
     <div style='color:green'>$100</div>
     <h3>Estimated savings for next month:</h3>
       <div>$120</div>
-      <h3>Average savings in your zipcode</h3>
+      <h3>Average savings in your zipcode:</h3>
         <div>$75</div>
+    </div>
    </body>
 </html>
 

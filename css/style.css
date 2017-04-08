@@ -6,11 +6,16 @@
  * Made By MaterializeCSS.com
  */
 
+ body{
+  margin: 2%;
+ }
+
 nav ul a,
 nav .brand-logo {
   color: #444;
   display: inline-block;
   margin:5px;
+  text-align: center;
 }
 
 p {
@@ -65,6 +70,23 @@ footer.page-footer {
 .download-button{
   background-color: #ffcc66;
   color: #333333;
-  margin: 20px;
+  margin: 0 20px;
   /* text-shadow: 1px 1px 2px gray; */
+}
+
+.checkbox{
+  margin: 10px;
+}
+
+h3{
+  font-size:1.6em;
+}
+
+h4{
+  font-size:1.3em;
+}
+
+#logo-img{
+  position: relative;
+  right: 100px;
 }
