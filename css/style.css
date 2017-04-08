@@ -58,7 +58,12 @@ footer.page-footer {
   margin: 0;
 }
 
-.big-header, .little-header{
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 5px;
+#big-header{
+  color: #ffcc66;
+}
+
+#download-button{
+  background-color: #ffcc66;
+  color: #333333;
+  /* text-shadow: 1px 1px 2px gray; */
 }
